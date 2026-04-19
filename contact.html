@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact GP Plumbing | Denton, TX</title>
+    <meta
+      name="description"
+      content="Contact GP Plumbing in Denton, Texas and use the online assistant or booking form to request service."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="GP Plumbing home">
+          <span class="brand-mark">GP</span>
+          <span>
+            <strong>GP Plumbing</strong>
+            <small>Denton, Texas</small>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="booking.html" class="button button-small">Book Now</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero reveal">
+          <p class="eyebrow">Contact</p>
+          <h1>Reach out and get your plumbing visit started.</h1>
+          <p class="hero-text">
+            This page gives you a clean place to direct customers who want to
+            contact GP Plumbing before booking online.
+          </p>
+        </section>
+
+        <section class="section split reveal delay-1">
+          <div class="panel panel-accent">
+            <p class="eyebrow">Contact Options</p>
+            <h2>Simple ways for customers to connect.</h2>
+            <p>
+              Add your real phone number, email, and hours here when you're
+              ready. For now, the booking page and assistant remain the main
+              actions.
+            </p>
+          </div>
+
+          <div class="checklist">
+            <div>
+              <strong>Phone</strong>
+              <p>(940) 555-0148</p>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <p>hello@gpplumbingtx.com</p>
+            </div>
+            <div>
+              <strong>Primary service area</strong>
+              <p>Denton, TX and nearby communities</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal delay-2">
+          <div class="assistant-shell">
+            <div class="assistant-panel">
+              <div class="assistant-header">
+                <div>
+                  <strong>GP Plumbing Assistant</strong>
+                  <p>Use voice input or text to start a booking</p>
+                </div>
+                <span class="assistant-live">Live</span>
+              </div>
+
+              <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+
+              <form id="chatForm" class="chat-form">
+                <label class="sr-only" for="chatInput">Ask the AI assistant</label>
+                <input
+                  id="chatInput"
+                  name="message"
+                  type="text"
+                  placeholder="Tell us what kind of plumbing help you need"
+                  autocomplete="off"
+                />
+                <button type="submit" class="button button-small">Send</button>
+                <button
+                  type="button"
+                  id="voiceButton"
+                  class="button button-secondary button-small"
+                >
+                  Start Voice
+                </button>
+              </form>
+
+              <div class="quick-actions">
+                <button type="button" class="chip" data-prompt="I need leak repair in Denton.">
+                  Leak Repair
+                </button>
+                <button type="button" class="chip" data-prompt="Book a water heater service this week.">
+                  Water Heater
+                </button>
+              </div>
+            </div>
+
+            <aside class="booking-preview">
+              <p class="eyebrow">Next Step</p>
+              <h3>Collected details</h3>
+              <dl id="bookingPreview" class="preview-list"></dl>
+              <a class="button" href="booking.html">Go to Booking</a>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>GP Plumbing</strong>
+          <p>Questions first, booking whenever the customer is ready.</p>
+        </div>
+        <a href="booking.html" class="button button-small">Schedule Service</a>
+      </footer>
+
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
